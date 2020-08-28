@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.14.0/css/all.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Viga', sans-serif;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #18b6ae;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+h1 span:nth-child(1) {
+    background-color: #18b6ae;
+    color: white;
+    padding: 0 20px;
+    border-radius: 41px;
+}
+
+input,
+select,
+button {
+    font-size: 26px;
+    outline: none;
+    border: none;
+    color: #535353;
+}
+
+input#nilai1,
+input#nilai2 {
+    border-radius: 20px;
+    text-indent: 12px;
+    height: 35px;
+}
+
+select {
+    border-radius: 4px;
+}
+
+button#tSD {
+    margin-right: 5px;
+    background-color: white;
+    border-radius: 4px;
+    width: 40px;
+}
+
+.result {
+    font-size: 40px;
+    color: #474747;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 360px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 270px;
+}
+
+footer p {
+    text-align: center;
+    color: #32c8c1;
+    font-size: 20px;
+}
+
+.fa-instagram {
+    color: #b6183aaa;
+}
+
+.fa-twitter {
+    color: #0099ffaa;
+}
+
+.fa-youtube {
+    color: #ff0000aa;
+}
+
+
+.fa-instagram:hover {
+    color: #b6183a;
+}
+
+.fa-twitter:hover {
+    color: #0099ff;
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+/* Mobile version */
+@media (max-width: 720px) {
+    body {
+        background-image: url('img/bg-mobile.png');
+        height: 100%;
+        overflow: scroll;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 100px;
+    }
+
+    h1 span:nth-child(2) {
+        text-shadow: 1px 1px 10px #f0f0f0;
+    }
+
+    input,
+    select {
+        display: block;
+        width: auto;
+        margin: 0 auto 8px;
+    }
+
+    button#tSD {
+        margin-right: none;
+    }
+
+    .result {
+        top: 400px;
+    }
+
+
+    footer p span {
+        background-color: #252525;
+        padding: 4px 10px;
+        border-radius: 4px;
+        text-shadow: none;
+    }
+
+    footer p span a {
+        padding-right: 4px;
+    }
+
+    footer p {
+        text-shadow: 1px 1px 10px rgba(133, 133, 133, 0.4);
+    }
+}
